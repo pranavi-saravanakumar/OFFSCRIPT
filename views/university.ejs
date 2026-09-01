@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Portal | Off Script</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('portalMenu');
+            menu.classList.toggle('hidden');
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('#menuBtn') && !event.target.closest('#menuBtn')) {
+                const menu = document.getElementById('portalMenu');
+                if (menu && !menu.classList.contains('hidden')) menu.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-indigo-900 text-white p-4 shadow-md flex justify-between items-center px-8 relative">
+        <div class="flex items-center gap-3">
+            <h1 class="text-xl font-extrabold tracking-wide text-amber-300">Off Script</h1>
+            <span class="text-xs bg-indigo-800 px-2 py-0.5 rounded text-indigo-200">University Portal</span>
+        </div>
+        <div class="flex items-center space-x-6">
+            <div class="hidden md:flex space-x-4 text-sm">
+                <a href="/" class="hover:text-indigo-200">Home</a>
+                <a href="/dashboard" class="hover:text-indigo-200">Analytics Dashboard</a>
+                <a href="/university-portal" class="underline font-semibold text-amber-300">University Portal</a>
+                <a href="/industry-portal" class="hover:text-indigo-200">Industry Hub</a>
+            </div>
+            <div class="relative">
+                <button id="menuBtn" onclick="toggleMenu()" class="p-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition flex flex-col justify-between w-9 h-9 items-center border border-indigo-700">
+                    <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                    <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                    <span class="w-5 h-0.5 bg-white rounded-full"></span>
+                </button>
+                <div id="portalMenu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-slate-200 py-2 z-50 text-slate-800">
+                    <a href="/dashboard" class="block px-4 py-2.5 text-xs font-semibold hover:bg-indigo-50 hover:text-indigo-600">📊 Analytics Dashboard</a>
+                    <a href="/lifecycle" class="block px-4 py-2.5 text-xs font-semibold hover:bg-indigo-50 hover:text-indigo-600">📈 Lifecycle Control Center</a>
+                    <a href="/university-portal" class="block px-4 py-2.5 text-xs font-semibold hover:bg-indigo-50 hover:text-indigo-600">🏛️ University Portal</a>
+                    <a href="/industry-portal" class="block px-4 py-2.5 text-xs font-semibold hover:bg-indigo-50 hover:text-indigo-600">🏭 Industry Hub</a>
+                    <a href="/" class="block px-4 py-2.5 text-xs font-semibold hover:bg-indigo-50 hover:text-indigo-600 border-t border-slate-100">🏠 Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto my-8 px-4">
+        <h2 class="text-2xl font-bold text-slate-800 mb-2">🏛️ Academic Routing & Faculty Mentor Portal</h2>
+        <p class="text-sm text-slate-500 mb-6">Route validated problem statements to universities, constitute student teams, and manage solution proposals.</p>
+
+        <div class="mb-10">
+            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Key Participating Industry Partners</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-5 rounded-xl shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-2xl">🏭</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-sm">Tata Steel CSR</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Water & Resource Mgmt</p>
+                    </div>
+                    <span class="mt-4 text-[10px] font-semibold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded w-max">Active Partner</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-2xl">💻</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-sm">HCL Foundation</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Digital Literacy & STEM</p>
+                    </div>
+                    <span class="mt-4 text-[10px] font-semibold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded w-max">Active Partner</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-2xl">🌾</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-sm">ITC Limited Agri</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Post-Harvest & Cold Storage</p>
+                    </div>
+                    <span class="mt-4 text-[10px] font-semibold bg-amber-50 text-amber-700 px-2 py-0.5 rounded w-max">Evaluating</span>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-2xl">⚡</span>
+                        <h4 class="font-bold text-slate-800 mt-2 text-sm">Tata Power CSR</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Healthcare Triage Systems</p>
+                    </div>
+                    <span class="mt-4 text-[10px] font-semibold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded w-max">Active Partner</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-xl font-bold text-slate-800 mb-4">University Challenge & Mentor Assignments</h3>
+        <div class="space-y-6">
+            <% if (typeof challenges !== 'undefined' && challenges.length > 0) { %>
+                <% challenges.forEach(function(c) { %>
+                    <div class="bg-white rounded-xl shadow border p-6">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b pb-4 mb-4 gap-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900"><%= c.title %></h3>
+                                <p class="text-xs text-slate-500 mt-1"><%= c.description %></p>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-0.5 rounded font-medium"><%= c.domain %></span>
+                                    <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded font-medium">📍 <%= c.location %></span>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto text-right">
+                                <span class="text-xs bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-bold"><%= c.pipelineStage || 'Definition' %></span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <div class="bg-slate-50 p-4 rounded-xl border text-xs space-y-2">
+                                    <p>🏛️ <strong>Assigned University:</strong> <%= c.university || 'Pending Routing' %></p>
+                                    <p>👨‍🏫 <strong>Faculty Mentor:</strong> <span class="text-indigo-700 font-bold"><%= c.facultyMentor || 'Unassigned' %></span></p>
+                                    <p>🎓 <strong>Student Team:</strong> <span class="text-slate-800 font-semibold"><%= c.studentTeam || 'Forming Team...' %></span></p>
+                                    <p>💡 <strong>Solution Proposal:</strong> <%= c.solutionProposal || 'Pending submission...' %></p>
+                                </div>
+
+                                <div class="bg-slate-50 p-4 rounded-xl border text-xs">
+                                    <p class="font-bold text-slate-700 mb-2 uppercase text-[10px] tracking-wider">Problem Solving Progression Timeline</p>
+                                    <div class="grid grid-cols-4 gap-2">
+                                        <% let stages = ['Definition', 'Validation', 'Pilot', 'Deployed']; %>
+                                        <% stages.forEach(function(st) { %>
+                                            <% 
+                                                let isCurrent = (c.pipelineStage || 'Definition') === st;
+                                                let isCompleted = stages.indexOf(c.pipelineStage || 'Definition') > stages.indexOf(st);
+                                            %>
+                                            <div class="p-2 rounded border text-center <%= isCompleted ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : (isCurrent ? 'bg-indigo-50 border-indigo-300 text-indigo-900 font-bold shadow-sm' : 'bg-white text-slate-400') %>">
+                                                <p class="text-[10px] font-bold"><%= st %></p>
+                                                <p class="text-[9px] mt-0.5 font-mono"><%= isCompleted || isCurrent ? 'Active' : 'Pending' %></p>
+                                            </div>
+                                        <% }); %>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-50 p-5 rounded-xl border">
+                                <h4 class="text-xs font-bold text-slate-700 uppercase mb-3">Update Faculty Mentor & Team</h4>
+                                <form action="/update-university-team/<%= c.id %>" method="POST" class="space-y-3 text-xs">
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Faculty Mentor Name</label>
+                                        <input type="text" name="facultyMentor" value="<%= c.facultyMentor || '' %>" class="w-full p-2 border rounded bg-white" required>
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Student Team Name</label>
+                                        <input type="text" name="studentTeam" value="<%= c.studentTeam || '' %>" class="w-full p-2 border rounded bg-white" required>
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Solution Proposal Summary</label>
+                                        <textarea name="solutionProposal" rows="2" class="w-full p-2 border rounded bg-white" required><%= c.solutionProposal || '' %></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-2 rounded hover:bg-indigo-700 transition">Save Academic Updates</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p class="text-center text-slate-400">No challenges available.</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

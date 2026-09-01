@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Lifecycle Management | SIH 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-indigo-900 text-white p-4 shadow-md flex justify-between items-center px-8">
+        <h1 class="text-xl font-bold">⚙️ Project Lifecycle Management System</h1>
+        <div class="space-x-4 text-sm">
+            <a href="/" class="hover:text-indigo-200">Home</a>
+            <a href="/dashboard" class="hover:text-indigo-200">Dashboard</a>
+            <a href="/lifecycle" class="underline font-semibold text-amber-300">Lifecycle Control</a>
+            <a href="/university-portal" class="hover:text-indigo-200">University Portal</a>
+            <a href="/industry-portal" class="hover:text-indigo-200">Industry Hub</a>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto my-8 px-4">
+        <div class="bg-amber-50 border border-amber-200 p-6 rounded-xl mb-8 shadow-sm">
+            <h2 class="text-2xl font-bold text-amber-900 mb-2">Milestones, Deliverables, Testing & IP Generation</h2>
+            <p class="text-sm text-amber-700">Monitor project workflows, track test outcomes, record intellectual property (patents/copyrights), incubate startups, and update real-time district implementation statuses.</p>
+        </div>
+
+        <div class="space-y-8">
+            <% challenges.forEach(c => { %>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col lg:flex-row justify-between gap-6">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded font-semibold"><%= c.domain %></span>
+                            <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded font-medium">📍 District: <%= c.district %></span>
+                            <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded font-bold"><%= c.completionRate %>% Completed</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-1"><%= c.title %></h3>
+                        <p class="text-sm text-slate-600 mb-4"><%= c.description %></p>
+                        
+                        <div class="bg-slate-50 p-4 rounded-lg border text-xs text-slate-700 space-y-2">
+                            <p>🚩 <strong>Current Milestone:</strong> <%= c.milestones %></p>
+                            <p>📦 <strong>Deliverables:</strong> <%= c.deliverables %></p>
+                            <p>🧪 <strong>Testing Outcomes:</strong> <span class="text-indigo-700 font-medium"><%= c.testingOutcome %></span></p>
+                            <p>💡 <strong>Intellectual Property:</strong> <span class="text-amber-700 font-bold"><%= c.ipGeneration %></span></p>
+                            <p>🚀 <strong>Startup Incubation:</strong> <span class="text-emerald-700 font-semibold"><%= c.startupIncubation %></span></p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-96 bg-slate-50 p-4 rounded-xl border flex flex-col justify-between">
+                        <form action="/update-lifecycle/<%= c.id %>" method="POST" class="space-y-3">
+                            <h4 class="text-xs font-bold uppercase text-slate-700 tracking-wider">Update Lifecycle Metrics</h4>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">Current Milestone</label>
+                                <input type="text" name="milestones" value="<%= c.milestones %>" class="w-full mt-1 p-2 border rounded text-xs bg-white" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">Deliverables</label>
+                                <input type="text" name="deliverables" value="<%= c.deliverables %>" class="w-full mt-1 p-2 border rounded text-xs bg-white" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">Testing Outcomes</label>
+                                <input type="text" name="testingOutcome" value="<%= c.testingOutcome %>" class="w-full mt-1 p-2 border rounded text-xs bg-white" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">IP Generation / Patent Status</label>
+                                <input type="text" name="ipGeneration" value="<%= c.ipGeneration %>" class="w-full mt-1 p-2 border rounded text-xs bg-white" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">Startup Incubation Status</label>
+                                <input type="text" name="startupIncubation" value="<%= c.startupIncubation %>" class="w-full mt-1 p-2 border rounded text-xs bg-white" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">Completion Progress (%)</label>
+                                <input type="number" name="completionRate" min="0" max="100" value="<%= c.completionRate %>" class="w-full mt-1 p-2 border rounded text-xs bg-white font-bold text-emerald-600" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-600">Implementation Status</label>
+                                <select name="status" class="w-full mt-1 p-2 border rounded text-xs bg-white font-medium">
+                                    <option value="Under Community Aggregation" <%= c.status === 'Under Community Aggregation' ? 'selected' : '' %>>Under Community Aggregation</option>
+                                    <option value="R&D & Prototyping Active" <%= c.status === 'R&D & Prototyping Active' ? 'selected' : '' %>>R&D & Prototyping Active</option>
+                                    <option value="Pilot Implementation Active" <%= c.status === 'Pilot Implementation Active' ? 'selected' : '' %>>Pilot Implementation Active</option>
+                                    <option value="Successfully Deployed & Transferred" <%= c.status === 'Successfully Deployed & Transferred' ? 'selected' : '' %>>Successfully Deployed & Transferred</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-amber-600 text-white text-xs font-bold py-2.5 rounded hover:bg-amber-700 transition">Save Lifecycle Updates</button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

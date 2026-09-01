@@ -1,0 +1,262 @@
+[
+  {
+    "id": "4e3b871a-9845-47a7-8ceb-72ba26f52041",
+    "title": "pothole",
+    "description": "huge pothole on the road",
+    "domain": "Urban Development & Public Services",
+    "location": "Ranchi",
+    "district": "Ranchi",
+    "populationAffected": "10-15 people injured",
+    "reportCount": 1,
+    "priorityScore": 15,
+    "priorityLevel": "Can be taken care later",
+    "status": "Under Academic Routing & Evaluation",
+    "pipelineStage": "Definition",
+    "communityRep": "Citizen ID: CIT_001 (Ranchi Residents)",
+    "university": "Indian Institute of Technology (IIT) (ISM) Dhanbad - Applied Sciences",
+    "facultyMentor": "Dr. Assigned Faculty Mentor (Pending Spec)",
+    "studentTeam": "Team Innovate (Urban Dept)",
+    "solutionProposal": "AI-generated prototype structure pending student/faculty review.",
+    "industry": "Open for Partnership & CSR Funding",
+    "pledgedValue": "₹0",
+    "milestones": "Milestone 1: Problem Scoping & Analysis",
+    "deliverables": "Initial SRS & Feasibility Report",
+    "testingOutcome": "Pending Simulation & Lab Tests",
+    "ipGeneration": "None Yet",
+    "startupIncubation": "None Yet",
+    "completionRate": 25,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Sep 1, 12:39 PM",
+        "status": "Active"
+      },
+      {
+        "stage": "Validation",
+        "time": "Pending",
+        "status": "Upcoming"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Pending",
+        "status": "Upcoming"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Pending",
+        "status": "Upcoming"
+      }
+    ],
+    "imagePath": "/uploads/1788246556121.png",
+    "emailNotificationStatus": null,
+    "date": "2026-09-01"
+  },
+  {
+    "id": "1",
+    "title": "Acute Groundwater Depletion in Rural Ranchi",
+    "description": "Borewells are drying up rapidly during summer months affecting drinking water access for 5 villages.",
+    "domain": "Water Resources",
+    "location": "Ranchi, Jharkhand",
+    "district": "Ranchi",
+    "populationAffected": "15,000 citizens",
+    "reportCount": 5,
+    "priorityScore": 92,
+    "priorityLevel": "Very Critical",
+    "status": "Pilot Implementation Active",
+    "pipelineStage": "Deployed",
+    "communityRep": "Marisol Ortega (Ranchi Residents Assn)",
+    "university": "Birla Institute of Technology (BIT) Mesra - Civil & Environmental Dept",
+    "facultyMentor": "Dr. R. K. Sharma",
+    "studentTeam": "Team AquaTech (Civil + CSE)",
+    "solutionProposal": "IoT-enabled smart solar borewell monitoring and automated recharge pit management system.",
+    "industry": "Tata Steel CSR [CSR Organization]",
+    "pledgedValue": "₹5,00,000",
+    "milestones": "Milestone 3 of 3: Field Pilot & Deployment",
+    "deliverables": "IoT Firmware v2.1, Solar Sensor Unit",
+    "testingOutcome": "Passed high-stress field pressure test with 91% water preservation efficiency.",
+    "ipGeneration": "Patent Filed (IPA-2026-9921)",
+    "startupIncubation": "HydroIoT Solutions (Incubated at BIT Mesra)",
+    "completionRate": 100,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Jun 10, 09:30 AM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Validation",
+        "time": "Jun 12, 02:15 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Jun 15, 11:00 AM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Sep 1, 01:21 PM",
+        "status": "Active"
+      }
+    ],
+    "imagePath": null,
+    "emailNotificationStatus": "📧 Briefing Dispatched to stakeholder@tata.com",
+    "date": "2026-06-10"
+  },
+  {
+    "id": "2",
+    "title": "Digital Literacy & STEM Learning Gaps in Tribal Schools",
+    "description": "Government residential schools lack functioning computer labs and interactive regional language software.",
+    "domain": "Education",
+    "location": "Khunti, Jharkhand",
+    "district": "Khunti",
+    "populationAffected": "3,200 students",
+    "reportCount": 3,
+    "priorityScore": 75,
+    "priorityLevel": "High",
+    "status": "Pilot Implementation Active",
+    "pipelineStage": "Pilot",
+    "communityRep": "Sunil Munda (Khunti Tribal Welfare)",
+    "university": "Central University of Jharkhand - Department of Education",
+    "facultyMentor": "Dr. Ananya Sen",
+    "studentTeam": "Team EdPulse (IT + AI)",
+    "solutionProposal": "Offline-first regional language AI tutor tablet interface with offline quiz modules.",
+    "industry": "HCL Foundation [CSR Organization]",
+    "pledgedValue": "₹3,50,000",
+    "milestones": "Milestone 2 of 3: Prototype Lab Testing",
+    "deliverables": "Offline APK v1.0, Curricular Mapping",
+    "testingOutcome": "Tested successfully with 45 students in controlled lab environment.",
+    "ipGeneration": "Copyright Registered (CR-2026-441)",
+    "startupIncubation": "EdPulse Learning Labs",
+    "completionRate": 80,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Jun 11, 10:00 AM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Validation",
+        "time": "Jun 14, 01:30 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Sep 1, 01:22 PM",
+        "status": "Active"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Pending",
+        "status": "Upcoming"
+      }
+    ],
+    "imagePath": null,
+    "emailNotificationStatus": "📧 Briefing Dispatched to target HCLFoundation@gmail.com at 01:09 PM",
+    "date": "2026-06-11"
+  },
+  {
+    "id": "3",
+    "title": "Post-Harvest Crop Spoilage Due to Cold Storage Deficits",
+    "description": "Smallholder tomato and vegetable farmers face 30% waste due to lack of decentralized cold storage facilities.",
+    "domain": "Agriculture",
+    "location": "Hazaribagh, Jharkhand",
+    "district": "Hazaribagh",
+    "populationAffected": "1,200 farming households",
+    "reportCount": 4,
+    "priorityScore": 72,
+    "priorityLevel": "High",
+    "status": "Definition & Scoping Active",
+    "pipelineStage": "Definition",
+    "communityRep": "Rameshwar Mahto (FPO President)",
+    "university": "Birsa Agricultural University, Kanke - Research Cell",
+    "facultyMentor": "Dr. V. K. Singh",
+    "studentTeam": "Team AgroCool (Mechanical)",
+    "solutionProposal": "Solar-powered phase change material (PCM) low-cost modular cold storage unit.",
+    "industry": "ITC Limited Agri Division [Corporate Sponsor]",
+    "pledgedValue": "₹4,00,000",
+    "milestones": "Milestone 1 of 3: Problem Scoping & Analysis",
+    "deliverables": "Thermal Thermodynamic Blueprint",
+    "testingOutcome": "Pending Lab Simulation",
+    "ipGeneration": "None Yet",
+    "startupIncubation": "None Yet",
+    "completionRate": 20,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Jun 13, 11:15 AM",
+        "status": "Active"
+      },
+      {
+        "stage": "Validation",
+        "time": "Pending",
+        "status": "Upcoming"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Pending",
+        "status": "Upcoming"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Pending",
+        "status": "Upcoming"
+      }
+    ],
+    "imagePath": null,
+    "emailNotificationStatus": null,
+    "date": "2026-06-13"
+  },
+  {
+    "id": "4",
+    "title": "Real-time Maternal Healthcare Triage & Transport Delay",
+    "description": "Pregnant women in remote hilly terrains suffer critical delays in emergency ambulance routing.",
+    "domain": "Healthcare",
+    "location": "Gumla, Jharkhand",
+    "district": "Gumla",
+    "populationAffected": "8,500 rural families",
+    "reportCount": 6,
+    "priorityScore": 87,
+    "priorityLevel": "Critical",
+    "status": "Deployment & Scaling Active",
+    "pipelineStage": "Deployed",
+    "communityRep": "Anita Minj (District ASHA Coordinator)",
+    "university": "Rajendra Institute of Medical Sciences (RIMS) - Tech Innovation Cell",
+    "facultyMentor": "Dr. Priya Roy",
+    "studentTeam": "Team LifeLine (ECE + CSE)",
+    "solutionProposal": "LoRa-based emergency SOS panic button integrated with district ambulance dispatch GIS maps.",
+    "industry": "Tata Power CSR [Corporate Partner]",
+    "pledgedValue": "₹7,50,000",
+    "milestones": "Milestone 3 of 3: Full District Deployment",
+    "deliverables": "Hardware Transmitters, Dispatch Dashboard",
+    "testingOutcome": "Reduced average emergency response time by 42 minutes across 12 CHCs.",
+    "ipGeneration": "Patent Granted (IPA-2025-1102)",
+    "startupIncubation": "LifeLine Emergency Systems",
+    "completionRate": 100,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "May 20, 09:00 AM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Validation",
+        "time": "May 28, 11:30 AM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Jun 05, 10:00 AM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Jun 12, 04:00 PM",
+        "status": "Completed"
+      }
+    ],
+    "imagePath": null,
+    "emailNotificationStatus": "📧 Briefing Dispatched to emergency@tatapower.com",
+    "date": "2026-05-20"
+  }
+]

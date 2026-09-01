@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin & University Workflow Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <nav class="bg-indigo-900 text-white p-4 shadow-md flex justify-between items-center px-8">
+        <h1 class="text-xl font-bold">⚙️ Admin / HEI Workflow Management</h1>
+        <div class="space-x-4">
+            <a href="/" class="hover:text-indigo-200">Home</a>
+            <a href="/dashboard" class="hover:text-indigo-200">Dashboard</a>
+            <a href="/admin" class="underline font-semibold">Admin Panel</a>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto my-8 px-4">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-xl font-bold text-slate-800">Manage Challenge Routing & Assignments</h3>
+            <span class="text-xs bg-slate-200 text-slate-700 px-3 py-1 rounded-full font-semibold">Sorted by AI Priority Score</span>
+        </div>
+
+        <div class="space-y-4">
+            <% if (challenges && challenges.length > 0) { %>
+                <% challenges.forEach(c => { %>
+                    <% 
+                      let badgeColor = 'bg-gray-100 text-gray-800 border-gray-300';
+                      if (c.priorityLevel === 'Critical') badgeColor = 'bg-red-100 text-red-800 border-red-300';
+                      else if (c.priorityLevel === 'High') badgeColor = 'bg-orange-100 text-orange-800 border-orange-300';
+                      else if (c.priorityLevel === 'Medium') badgeColor = 'bg-amber-100 text-amber-800 border-amber-300';
+                    %>
+                    <div class="bg-white p-6 rounded-xl shadow border flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div class="max-w-xl">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xs bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded font-semibold"><%= c.domain %></span>
+                                <span class="text-xs border px-2.5 py-0.5 rounded-md font-bold <%= badgeColor %>">
+                                    ⚡ <%= c.priorityLevel %> (<%= c.priorityScore %>/100)
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 mt-1"><%= c.title %></h4>
+                            <p class="text-sm text-slate-600 mt-1"><%= c.description %></p>
+                            <p class="text-xs text-slate-400 mt-2">📍 Location: <%= c.location %> | 👥 Reports Grouped: <%= c.reportCount %></p>
+                        </div>
+                        
+                        <form action="/update-status/<%= c.id %>" method="POST" class="flex flex-col gap-2 min-w-[260px] bg-slate-50 p-4 rounded-lg border">
+                            <label class="text-xs font-bold text-slate-700">Update HEI & Workflow:</label>
+                            <input type="text" name="university" value="<%= c.university %>" class="text-xs p-2 border rounded bg-white" placeholder="Assign HEI" required>
+                            <input type="text" name="industry" value="<%= c.industry %>" class="text-xs p-2 border rounded bg-white" placeholder="Industry Partner" required>
+                            
+                            <select name="status" class="text-xs p-2 border rounded bg-white font-medium">
+                                <option value="Under Community Aggregation" <%= c.status === 'Under Community Aggregation' ? 'selected' : '' %>>Under Community Aggregation</option>
+                                <option value="Escalated to Problem Statement" <%= c.status === 'Escalated to Problem Statement' ? 'selected' : '' %>>Escalated to Problem Statement</option>
+                                <option value="Prototyping in Progress" <%= c.status === 'Prototyping in Progress' ? 'selected' : '' %>>Prototyping in Progress</option>
+                                <option value="Solution Deployed & Tested" <%= c.status === 'Solution Deployed & Tested' ? 'selected' : '' %>>Solution Deployed & Tested</option>
+                            </select>
+                            
+                            <button type="submit" class="bg-indigo-600 text-white text-xs font-bold py-2 rounded hover:bg-indigo-700 transition">Save Changes</button>
+                        </form>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p class="text-slate-500">No challenges submitted yet.</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

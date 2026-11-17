@@ -1,18 +1,18 @@
 [
   {
-    "id": "4e3b871a-9845-47a7-8ceb-72ba26f52041",
-    "title": "pothole",
-    "description": "huge pothole on the road",
+    "id": "cf2bcae4-83dc-4459-a6a7-ab250b9d92ae",
+    "title": "traffic congestion",
+    "description": "1000 people affested",
     "domain": "Urban Development & Public Services",
-    "location": "Ranchi",
-    "district": "Ranchi",
-    "populationAffected": "10-15 people injured",
+    "location": "ranchi",
+    "district": "ranchi",
+    "populationAffected": "1000 people affected",
     "reportCount": 1,
-    "priorityScore": 15,
-    "priorityLevel": "Can be taken care later",
+    "priorityScore": 62,
+    "priorityLevel": "Moderate",
     "status": "Under Academic Routing & Evaluation",
     "pipelineStage": "Definition",
-    "communityRep": "Citizen ID: CIT_001 (Ranchi Residents)",
+    "communityRep": "Citizen ID: CIT_005 (ranchi Residents)",
     "university": "Indian Institute of Technology (IIT) (ISM) Dhanbad - Applied Sciences",
     "facultyMentor": "Dr. Assigned Faculty Mentor (Pending Spec)",
     "studentTeam": "Team Innovate (Urban Dept)",
@@ -28,7 +28,7 @@
     "timeline": [
       {
         "stage": "Definition",
-        "time": "Sep 1, 12:39 PM",
+        "time": "Sep 10, 12:59 PM",
         "status": "Active"
       },
       {
@@ -47,8 +47,164 @@
         "status": "Upcoming"
       }
     ],
-    "imagePath": "/uploads/1788246556121.png",
+    "imagePath": "/uploads/1789025364891.png",
     "emailNotificationStatus": null,
+    "date": "2026-09-10"
+  },
+  {
+    "id": "ab7bec32-d777-4f25-935d-c2804e13604a",
+    "title": "water pollution",
+    "description": "Millions of residents across Jharkhand are affected by toxic heavy metals, fluoride, and arsenic contaminating their local drinking water sources",
+    "domain": "Water Resources",
+    "location": "Ranchi",
+    "district": "Ranchi",
+    "populationAffected": "1,00,000",
+    "reportCount": 1,
+    "priorityScore": 98,
+    "priorityLevel": "Very Critical",
+    "status": "Under Academic Routing & Evaluation",
+    "pipelineStage": "Definition",
+    "communityRep": "Citizen ID: CIT_003 (Ranchi Residents)",
+    "university": "Birla Institute of Technology (BIT) Mesra - Civil & Environmental Dept",
+    "facultyMentor": "Dr. Assigned Faculty Mentor (Pending Spec)",
+    "studentTeam": "Team Innovate (Water Dept)",
+    "solutionProposal": "AI-generated prototype structure pending student/faculty review.",
+    "industry": "Open for Partnership & CSR Funding",
+    "pledgedValue": "₹0",
+    "milestones": "Milestone 1: Problem Scoping & Analysis",
+    "deliverables": "Initial SRS & Feasibility Report",
+    "testingOutcome": "Pending Simulation & Lab Tests",
+    "ipGeneration": "None Yet",
+    "startupIncubation": "None Yet",
+    "completionRate": 25,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Sep 10, 06:37 AM",
+        "status": "Active"
+      },
+      {
+        "stage": "Validation",
+        "time": "Pending",
+        "status": "Upcoming"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Pending",
+        "status": "Upcoming"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Pending",
+        "status": "Upcoming"
+      }
+    ],
+    "imagePath": "/uploads/1789002461679.png",
+    "emailNotificationStatus": null,
+    "date": "2026-09-10"
+  },
+  {
+    "id": "1c00122c-0036-4612-868f-685fb6f55f34",
+    "title": "pothole on main road",
+    "description": "causes traffic congestion",
+    "domain": "Urban Development & Public Services",
+    "location": "ranchi",
+    "district": "ranchi",
+    "populationAffected": "15 people affected",
+    "reportCount": 1,
+    "priorityScore": 15,
+    "priorityLevel": "Can be taken care later",
+    "status": "Successfully Deployed & Transferred",
+    "pipelineStage": "Deployed",
+    "communityRep": "Citizen ID: rgrhhbrs (ranchi Residents)",
+    "university": "Indian Institute of Technology (IIT) (ISM) Dhanbad - Applied Sciences",
+    "facultyMentor": "RK Sharma, R Yashwitha",
+    "studentTeam": "Team Innovate (Urban Dept)",
+    "solutionProposal": "AI-generated prototype structure pending student/faculty review.",
+    "industry": "Tata Steel ➔ Co-development & CSR Funding (₹5,00,000)",
+    "pledgedValue": "₹5,00,000",
+    "milestones": "Milestone 1: Problem Scoping & Analysis",
+    "deliverables": "Initial SRS & Feasibility Report",
+    "testingOutcome": "Pending Simulation & Lab Tests",
+    "ipGeneration": "None Yet",
+    "startupIncubation": "None Yet",
+    "completionRate": 100,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Sep 2, 07:11 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Validation",
+        "time": "Sep 2, 07:33 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Sep 2, 07:37 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Sep 2, 07:38 PM",
+        "status": "Active"
+      }
+    ],
+    "imagePath": "/uploads/1788356517155.png",
+    "emailNotificationStatus": "📧 Briefing Dispatched to ryashwitha@gmail.com at 07:37 PM",
+    "date": "2026-09-02"
+  },
+  {
+    "id": "4e3b871a-9845-47a7-8ceb-72ba26f52041",
+    "title": "pothole",
+    "description": "huge pothole on the road",
+    "domain": "Urban Development & Public Services",
+    "location": "Ranchi",
+    "district": "Ranchi",
+    "populationAffected": "10-15 people injured",
+    "reportCount": 1,
+    "priorityScore": 15,
+    "priorityLevel": "Can be taken care later",
+    "status": "Successfully Deployed & Transferred",
+    "pipelineStage": "Deployed",
+    "communityRep": "Citizen ID: CIT_001 (Ranchi Residents)",
+    "university": "Indian Institute of Technology (IIT) (ISM) Dhanbad - Applied Sciences",
+    "facultyMentor": "Dr. Assigned Faculty Mentor (Pending Spec)",
+    "studentTeam": "Team Innovate (Urban Dept)",
+    "solutionProposal": "AI-generated prototype structure pending student/faculty review.",
+    "industry": "Open for Partnership & CSR Funding",
+    "pledgedValue": "₹0",
+    "milestones": "Milestone 1: Problem Scoping & Analysis",
+    "deliverables": "Initial SRS & Feasibility Report",
+    "testingOutcome": "Pending Simulation & Lab Tests",
+    "ipGeneration": "None Yet",
+    "startupIncubation": "None Yet",
+    "completionRate": 100,
+    "timeline": [
+      {
+        "stage": "Definition",
+        "time": "Sep 1, 12:39 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Validation",
+        "time": "Sep 2, 07:14 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Pilot",
+        "time": "Sep 2, 07:14 PM",
+        "status": "Completed"
+      },
+      {
+        "stage": "Deployed",
+        "time": "Sep 2, 07:37 PM",
+        "status": "Active"
+      }
+    ],
+    "imagePath": "/uploads/1788246556121.png",
+    "emailNotificationStatus": "📧 Briefing Dispatched to ryashwitha@gmail.com at 07:32 PM",
     "date": "2026-09-01"
   },
   {
@@ -63,7 +219,7 @@
     "priorityScore": 92,
     "priorityLevel": "Very Critical",
     "status": "Pilot Implementation Active",
-    "pipelineStage": "Deployed",
+    "pipelineStage": "Pilot",
     "communityRep": "Marisol Ortega (Ranchi Residents Assn)",
     "university": "Birla Institute of Technology (BIT) Mesra - Civil & Environmental Dept",
     "facultyMentor": "Dr. R. K. Sharma",
@@ -76,7 +232,7 @@
     "testingOutcome": "Passed high-stress field pressure test with 91% water preservation efficiency.",
     "ipGeneration": "Patent Filed (IPA-2026-9921)",
     "startupIncubation": "HydroIoT Solutions (Incubated at BIT Mesra)",
-    "completionRate": 100,
+    "completionRate": 63,
     "timeline": [
       {
         "stage": "Definition",
@@ -90,13 +246,13 @@
       },
       {
         "stage": "Pilot",
-        "time": "Jun 15, 11:00 AM",
-        "status": "Completed"
+        "time": "Sep 2, 07:13 PM",
+        "status": "Active"
       },
       {
         "stage": "Deployed",
-        "time": "Sep 1, 01:21 PM",
-        "status": "Active"
+        "time": "Pending",
+        "status": "Upcoming"
       }
     ],
     "imagePath": null,
@@ -204,7 +360,7 @@
       }
     ],
     "imagePath": null,
-    "emailNotificationStatus": null,
+    "emailNotificationStatus": "📧 Briefing Dispatched to startup@gmail.com at 06:18 AM",
     "date": "2026-06-13"
   },
   {
@@ -218,7 +374,7 @@
     "reportCount": 6,
     "priorityScore": 87,
     "priorityLevel": "Critical",
-    "status": "Deployment & Scaling Active",
+    "status": "Under Community Aggregation",
     "pipelineStage": "Deployed",
     "communityRep": "Anita Minj (District ASHA Coordinator)",
     "university": "Rajendra Institute of Medical Sciences (RIMS) - Tech Innovation Cell",
@@ -251,8 +407,8 @@
       },
       {
         "stage": "Deployed",
-        "time": "Jun 12, 04:00 PM",
-        "status": "Completed"
+        "time": "Sep 1, 10:19 PM",
+        "status": "Active"
       }
     ],
     "imagePath": null,
